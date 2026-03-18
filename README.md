@@ -37,8 +37,7 @@ Make sure you have the following installed:
 ### 1. Clone or Download the Project
 
 ```
-git clone <your-repository-url>
-cd YOLO
+git clone https://github.com/Anjan-taty/Yolo-Image-Toothpaste-Detection-with-Label-Studio.git
 ```
 
 or download the ZIP and extract it.
@@ -88,7 +87,7 @@ pip install --upgrade torch torchvision torchaudio --index-url https://download.
 Run the detection script using:
 
 ```
-python main.py --model data/train/my_model.pt --source usb0 --resolution 1280x720
+python main.py --model data/my_model.pt --source usb0 --resolution 1280x720
 ```
 
 ### Parameters
@@ -103,7 +102,7 @@ python main.py --model data/train/my_model.pt --source usb0 --resolution 1280x72
 Example:
 
 ```
-python main.py --model data/train/my_model.pt --source usb0 --resolution 1280x720 --thresh 0.8
+python main.py --model data/my_model.pt --source usb0 --resolution 1280x720 --thresh 0.8
 ```
 
 ---
@@ -120,7 +119,7 @@ python main.py --model data/train/my_model.pt --source usb0 --resolution 1280x72
 Example:
 
 ```
-python main.py --model data/train/my_model.pt --source test.jpg
+python main.py --model data/my_model.pt --source test.jpg
 ```
 
 ---
@@ -162,7 +161,7 @@ pip install ultralytics opencv-python numpy
 
 # Notes
 
-* Ensure the model file `my_model.pt` exists in the `data/train/` directory.
+* Ensure the model file `my_model.pt` exists in the `data/` directory.
 * Webcam index may vary depending on the system.
 
 Example:
