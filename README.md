@@ -1,47 +1,47 @@
-# YOLO Custom Object Detection
+# 🧠 YOLO Custom Object Detection
 
-This project performs **real-time object detection using a custom trained YOLO model** with a webcam, images, or videos.
+This project performs **real-time object detection** using a custom trained **YOLO model** on webcam, images, or videos.
 
-The model was trained using the **Ultralytics YOLO framework** and runs inference through the `main.py` script.
+The model is trained using the **Ultralytics YOLO framework** and runs inference through the `main.py` script.
 
 ---
 
-# Project Structure
+## 📂 Project Structure
 
 ```
 YOLO/
 │
 ├── data/
 │   └── train/
-│       └── my_model.pt        # Trained YOLO model
+│       └── my_model.pt        # 🎯 Trained YOLO model
 │
-├── main.py                    # Main detection script
-├── data_initial.zip           # Initial dataset
-├── data.zip                   # Processed dataset
-└── README.md
+├── main.py                    # 🚀 Main detection script
+├── data_initial.zip           # 📦 Initial dataset
+├── data.zip                   # 📦 Processed dataset
+└── README.md                  # 📘 Documentation
 ```
 
 ---
 
-# Requirements
+## ⚙️ Requirements
 
 Make sure you have the following installed:
 
-* Python 3.9+
-* CUDA supported GPU (optional but recommended)
+- 🐍 Python 3.9+
+- ⚡ CUDA-supported GPU (optional but recommended)
 
 ---
 
-# Installation
+## 🛠️ Installation
 
-### 1. Clone or Download the Project
+### 1. Clone the Repository
 
 ```
 git clone https://github.com/Anjan-taty/Yolo-Image-Toothpaste-Detection-with-Label-Studio.git
 cd Yolo-Image-Toothpaste-Detection-with-Label-Studio
 ```
 
-or download the ZIP and extract it.
+Or download the ZIP and extract it.
 
 ---
 
@@ -53,14 +53,12 @@ python -m venv myenv
 
 Activate environment:
 
-**Windows**
-
+**🪟 Windows**
 ```
 myenv\Scripts\activate
 ```
 
-**Linux / Mac**
-
+**🐧 Linux / 🍎 Mac**
 ```
 source myenv/bin/activate
 ```
@@ -69,13 +67,11 @@ source myenv/bin/activate
 
 ### 3. Install Dependencies
 
-Requirements:
-
 ```
 pip install -r requirements.txt
 ```
 
-Install PyTorch with CUDA support: If you need Cuda Support
+### 🔥 (Optional) Install PyTorch with CUDA
 
 ```
 pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
@@ -83,15 +79,17 @@ pip install --upgrade torch torchvision torchaudio --index-url https://download.
 
 ---
 
-# Running the Detection
+## 🎯 Running the Detection
 
-Run the detection script using:
+Run the detection script:
 
 ```
 python main.py --model data/my_model.pt --source usb0 --resolution 1280x720
 ```
 
-### Parameters
+---
+
+## ⚙️ Parameters
 
 | Parameter      | Description                   |
 | -------------- | ----------------------------- |
@@ -100,7 +98,7 @@ python main.py --model data/my_model.pt --source usb0 --resolution 1280x720
 | `--resolution` | Output display resolution     |
 | `--thresh`     | Confidence threshold          |
 
-Example:
+### Example:
 
 ```
 python main.py --model data/my_model.pt --source usb0 --resolution 1280x720 --thresh 0.8
@@ -108,14 +106,14 @@ python main.py --model data/my_model.pt --source usb0 --resolution 1280x720 --th
 
 ---
 
-# Source Options
+## 📸 Source Options
 
-| Source | Example     |
-| ------ | ----------- |
-| Webcam | `usb0`      |
-| Image  | `test.jpg`  |
-| Video  | `video.mp4` |
-| Folder | `images/`   |
+| Source  | Example     |
+|--------|------------|
+| 🎥 Webcam | `usb0`      |
+| 🖼️ Image  | `test.jpg`  |
+| 🎬 Video  | `video.mp4` |
+| 📁 Folder | `images/`   |
 
 Example:
 
@@ -125,21 +123,21 @@ python main.py --model data/my_model.pt --source test.jpg
 
 ---
 
-# Output
+## 📊 Output
 
-The program will display:
+The program displays:
 
-* Bounding boxes
-* Object class names
-* Confidence scores
-* Real-time FPS
-* Object count
+- 📦 Bounding boxes  
+- 🏷️ Object class names  
+- 📈 Confidence scores  
+- ⚡ Real-time FPS  
+- 🔢 Object count  
 
 Press **Q** to quit the program.
 
 ---
 
-# Dependencies
+## 📦 Dependencies
 
 Main libraries used:
 
@@ -152,7 +150,7 @@ opencv-python
 numpy
 ```
 
-Install them manually if required:
+Install manually if needed:
 
 ```
 pip install ultralytics opencv-python numpy
@@ -160,10 +158,10 @@ pip install ultralytics opencv-python numpy
 
 ---
 
-# Notes
+## 📝 Notes
 
-* Ensure the model file `my_model.pt` exists in the `data/` directory.
-* Webcam index may vary depending on the system.
+- Ensure the model file `my_model.pt` exists in the `data/` directory.
+- Webcam index may vary depending on the system.
 
 Example:
 
@@ -174,6 +172,24 @@ usb1
 
 ---
 
-# Designed for:
+## 🎯 Use Case
 
-Project developed for **custom YOLO object detection and real-time inference.**
+This project is designed for:
+
+- 🔍 Custom object detection  
+- 🎥 Real-time video inference  
+- 🧠 Computer vision experimentation  
+- 🚀 Deployable AI applications  
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Anjan (Taty)**  
+Passionate about AI, Computer Vision, and real-world applications 🚀
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
