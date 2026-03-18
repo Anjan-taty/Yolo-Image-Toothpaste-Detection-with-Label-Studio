@@ -38,6 +38,7 @@ Make sure you have the following installed:
 
 ```
 git clone https://github.com/Anjan-taty/Yolo-Image-Toothpaste-Detection-with-Label-Studio.git
+cd Yolo-Image-Toothpaste-Detection-with-Label-Studio
 ```
 
 or download the ZIP and extract it.
